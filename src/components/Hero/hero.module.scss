@@ -1,0 +1,150 @@
+.hero{
+  padding-bottom: 50px;
+  border-bottom: 1px dashed #e9ebed;
+}
+
+.heroTop{
+  width: 100%;
+  padding: 0 30px;
+  height: 421px;
+  position: relative;
+  margin-bottom: 39px;
+}
+
+.heroBg{
+  position: absolute;
+  width: 97%;
+  height: 100%;
+  top: 0;
+  left: 50%;
+  transform: translate(-50%,0);
+  z-index: -1 ;
+}
+
+.heroNewPar{
+  width: 74px;
+  margin-top: 39px;
+  padding: 3px 10px;
+  color: #FFFFFF;
+  border: 1px solid #FFFFFF;
+  border-radius: 5px;
+  margin-bottom: 36px;
+}
+
+.heroTopWrap{
+  padding-top: 39px;
+}
+
+.heroTitle{
+  width: 630px;
+  font-size: 35px;
+  color: #FFFFFF;
+  margin-bottom: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+  line-height: 46px;
+}
+
+.heroText{
+  font-size: 20px;
+  color: white;
+  margin-bottom: 25px;
+}
+
+.heroBtnBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 327px;
+}
+
+.catalogBtn{
+  cursor: pointer;
+  font-size: 16px;
+  color: #6F73EE;
+  padding: 15px 25px;
+  border-radius: 5px;
+  background-color: #FFFFFF;
+  border: none;
+}
+
+.testBtn{
+  cursor: pointer;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  padding: 12px 18px 12px 13px;
+  backdrop-filter: blur(5px);
+  background-color: #ffffff44;
+  font-size: 14px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+}
+
+.headerBottomWrap{
+  display: flex;
+  flex-direction: row;
+  column-gap: 130px;
+}
+
+.headerBottomRatings{
+  display: flex;
+  justify-content: end;
+  flex-grow: 1;
+}
+
+.headerBottomItem{
+  display: flex;
+  flex-direction: column;
+  row-gap: 6px;
+}
+
+.headerBottomItem h3{
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.headerBottomItem p{
+  font-size: 16px;
+}
+
+.ratinsWrap{
+  width: 196px;
+  height: 76px;
+  border: 1px solid #5D6C7B1A;
+  padding: 10px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 18px;
+}
+
+.yandexWrap{
+  width: 56px;
+  height: 56px;
+  background-color: #FC3F1D;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.yandexParText{
+    font-size: 12px;
+    color: #5D6C7B;
+    margin-bottom: 4px;
+}
+
+.yandexParBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.ratingPar{
+  font-size: 25px;
+  font-weight: 600;
+}

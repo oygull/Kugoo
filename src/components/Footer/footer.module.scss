@@ -1,0 +1,250 @@
+.footer{
+  padding-top: 20px;
+}
+
+.footerTop{
+  width: 100%;
+  background-color: #6F73EE;
+  padding: 24px 0;
+}
+
+.footerTopInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.footerTopInner h3{
+  width: 445px;
+  font-size: 18px;
+  color: #fff;
+  line-height: 24px;
+}
+
+.footerForm{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.footerForm input{
+  width: 410px;
+  height: 53px;
+  padding: 15px 25px;
+  background-color: #FFFFFF33;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #fff;
+  outline: none;
+  border: none;
+}
+
+.footerForm input::placeholder{
+  color: #fff;
+}
+
+.footerForm button{
+  cursor: pointer;
+  padding: 15px 25px;
+  color: #6F73EE;
+  border-radius: 5px;
+  border: none;
+  background-color: #fff;
+  height: 53px;
+}
+
+.footerWrap{
+  width: 100%;
+  background-color: #F4F7FB;
+}
+
+.wrapInner{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 46px 0;
+}
+
+.catalog h4{
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.cataloglist{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.catalogListLink {
+  display: inline-block;
+  color: #5D6C7B;
+  font-size: 14px;
+}
+
+.buyersMain{
+  display: flex;
+  flex-direction: row;
+  column-gap: 44px;
+}
+
+.buyers h4{
+  font-size: 18px;
+  margin-bottom: 18px;
+  font-weight: 500;
+}
+
+.contactsTop{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 18px;
+}
+
+.phoneCall{
+  font-size: 12px;
+  color: #6F73EE;
+}
+
+.contactsTop h4{
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.contactsMain{
+  display: flex;
+  flex-direction: row;
+  column-gap: 50px;
+}
+
+.contactsMainItem{
+  display: flex;
+  flex-direction: column;
+  row-gap: 28px;
+  justify-content: end;
+}
+
+.mainItem{
+  width: 142px;
+}
+
+.mainItemPar{
+  font-size: 12px;
+  margin-bottom: 5px;
+}
+
+.mainItemNum{
+  font-size: 16px;
+  margin-bottom: 7px;
+}
+
+.mainItemText{
+  font-size: 12px;
+  color: #5D6C7B;
+}
+
+.middleWrap{
+  padding: 36px 0;
+  border-bottom: 1px solid #5d6c7b35;
+  border-top: 1px solid #5d6c7b35;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.middleWrapInner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 60px;
+}
+
+.appStore{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.socialsList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.socialsLink{
+  width: 123px;
+  height: 45px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 11px;
+  background-color: #fff;
+  border-radius: 5px;
+} 
+
+.socialsDiv h5{
+  font-size: 14px;
+  color: #282739;
+  margin-bottom: 2px;
+  font-weight: 500;
+}
+
+.socialsDiv p{
+  font-size: 10px;
+  color: #5D6C7B;
+}
+
+.bottomWrap{
+  padding: 18px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.bottomInner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 44px;
+}
+
+.bottomInnerLink{
+  font-size: 12px;
+  color: #5D6C7B;
+}
+
+.bottomMainWrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 37px;
+}
+
+.paymentWrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.chat{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+}
+
+.chat {
+  font-size: 14px;
+}

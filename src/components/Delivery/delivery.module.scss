@@ -1,0 +1,99 @@
+
+.deliveryTop{
+  width: 100%;
+  display: grid;
+  gap: 40px;
+  padding: 60px 0;
+  grid-template-columns: 1fr 1fr;
+}
+
+.deliveryBlock{
+  position: relative;
+  height: 235px;
+  padding: 32px 40px;
+}
+
+.deliveryImg{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+
+.deliveryBlock h3 {
+  width: 258px;
+  font-size: 25px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  line-height: 32px;
+}
+
+.deliveryPar {
+  width: 258px;
+  font-size: 14px;
+  margin-bottom: 22px;
+  line-height: 20px;
+}
+
+.deliveryBtn{
+  display: flex;
+  flex-direction: row;
+  column-gap: 8px;
+}
+
+.deliveryBtn p{
+  font-size: 14px;
+  color: #6F73EE;
+}
+
+.deliveryBottom{
+  width: 97%;
+  background: radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.deliveryBottomInner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deliveryContent{
+  width: 440px;
+}
+
+.deliveryBadge{
+  width: 62px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #EE685F;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 31px;
+}
+
+.deliveryTitle{
+  font-size: 35px;
+  line-height: 110%;
+  font-weight: 600;
+  margin-bottom: 37px;
+  color: #fff;
+}
+
+.moreInfoBtn{
+  display: inline-block;
+  font-size: 16px;
+  color: #282739;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+}

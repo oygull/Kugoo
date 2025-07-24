@@ -1,0 +1,130 @@
+.headerWrap{
+  padding: 27px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.navCat{
+  width: 13px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 5px;
+  align-items: flex-end;
+}
+
+.headerLogoLink{
+  margin-right: 35px;
+}
+
+.navLine{
+  width: 13px;
+  height: 1px;
+  background-color: white;
+}
+
+.navLineHalf{
+  width: 7px;
+  height: 1px;
+  background-color: white;
+}
+
+.headerBtn{
+  width: 114px;
+  height: 40px;
+  background-color: #6F73EE;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  column-gap: 13px;
+  border: none;
+  margin-right: 20px;
+}
+
+.headerBtn p{
+  font-size: 16px;
+  color: white;
+}
+
+.headerSearch{
+  position: relative;
+  width: 603px;
+  padding: 2px;
+  border: 1.5px solid #6F73EE;
+  border-radius: 5px;
+  height: 40px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-right: 47px;
+}
+
+.headerSearchPart{
+  height: 100%;
+  width: 76px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 4px;
+  align-items: center;
+  justify-content: center;
+  background-color: #F4F7FB;
+  border-radius: 5px;
+}
+
+.searchInput{
+  width: 80%;
+  padding: 10px 20px;
+  border: none;
+  color: #5D6C7B;
+  font-size: 14px;
+}
+
+.searchBtn{
+  cursor: pointer;
+  position: absolute;
+  top: 0;
+  right: -1px;
+  width: 40px;
+  height: 38px;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+  border: none;
+  background-color: #6F73EE;
+}
+
+.headerBtnBox{
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 25px;
+  background-color: transparent;
+}
+
+.headerWrapBtn{
+  cursor: pointer;
+  padding: 5px 0;
+  background-color: transparent;
+  border: none;
+}
+
+.headerCartBtn{
+  cursor: pointer;
+  padding: 5px 0;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  background-color: transparent;
+  border: none;
+}
+
+.headerBox{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}

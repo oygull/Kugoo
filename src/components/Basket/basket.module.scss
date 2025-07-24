@@ -1,0 +1,130 @@
+.basket{
+  width: 304px;
+  z-index: 10001;
+  max-height: 334px;
+  position: absolute;
+  top: 40px;
+  right: 0;
+  background-color: #fff;
+  border-radius: 10px;
+  box-shadow: 0px 10px 30px 0px #6F73EE1A;
+  overflow: hidden;
+}
+
+.basketTop{
+  width: 100%;
+  background-color: #F4F7FB;
+  height: 56px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.emptyBasket{
+  padding: 20px;
+  font-size: 14px;
+  color: #5D6C7B;
+}
+
+
+.basketText{
+  font-size: 16px;
+}
+
+.basketNum{
+  font-size: 14px;
+  color: #5D6C7B;
+}
+
+.basketMain{
+  max-height: 202px;
+  overflow-y: scroll;
+}
+
+.basketMainInner{
+  height: 100%;
+  overflow-y: scroll;
+}
+
+.basketFooter{
+  height: 76px;
+  box-shadow: 0px -4px 50px 0px #0000001A;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+.priceBox{
+  display: flex;
+  flex-direction: column;
+}
+
+.priceBoxText{
+ font-size: 12px;
+ color: #5D6C7B;
+ margin-bottom: 4px;
+}
+
+.priceNum{
+  font-size: 18px;
+}
+
+.basketBtn{
+  border: none;
+  cursor: pointer;
+  padding: 10px 32.5px;
+  color: #fff;
+  border-radius: 5px;
+  background-color: #6F73EE;
+  font-size: 12px;
+  height: 37px;
+}
+
+.basketItem{
+  height: 65px;
+  padding: 15px 25px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 15px;
+  border-bottom: 1px solid #EAEBED;
+}
+
+.basketItemImg{
+  width: 49px;
+  height: 49px;
+  border-radius: 50%;
+}
+
+.basketContent{
+  flex-grow: 1;
+}
+
+.deleteBtn{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 20px;
+  height: 20px;
+  border: none;
+  cursor: pointer;
+  background-color: transparent;
+}
+
+.deleteBtn img{
+  object-fit: contain;
+}
+
+.basketContent h4{
+  font-weight: 500;
+  font-size: 14px;
+  margin-bottom: 4px;
+}
+
+.basketContent p{
+  font-size: 12px;
+}
