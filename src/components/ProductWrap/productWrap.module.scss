@@ -23,6 +23,7 @@
 }
 
 .productType{
+  cursor: pointer;
   width: 103px;
   height: 37px;
   display: flex;
@@ -34,6 +35,12 @@
 
 .productType p{
   font-size: 12px;
+  transition: 0.3s ease;
+}
+
+.productType:hover  p{
+  color: #6F73EE;
+  transition: 0.3s ease;
 }
 
 .productBox{

@@ -8,19 +8,27 @@ import Prices from "../../components/Prices";
 import Reviews from "../../components/Reviews";
 import Blog from "../../components/Blog";
 import Popular from "../../components/Popular";
+import Videos from "../../components/Videos";
+import Faq from "../../components/Faq";
 
-function Main () {
+type AlertProps = {
+  setShowAlert: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Main: React.FC<AlertProps> = ({setShowAlert}) => {
   return(
     <div>
       <Hero/>
-      <ProductWrap />
+      <ProductWrap setShowAlert={setShowAlert}/>
       <Delivery/>
       <Categories/>
       <Russia/>
       <Prices/>
       <Reviews/>
+      <Videos/>
       <Blog/>
-      <Popular/>
+      <Faq/>
+      <Popular setShowAlert={setShowAlert}/>
     </div>
   )
 };

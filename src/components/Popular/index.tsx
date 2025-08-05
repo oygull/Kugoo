@@ -3,7 +3,11 @@ import styles from "./popular.module.scss";
 import popularProductsArr from "../../app/assets/data/popularProductsArr";
 import Product from "../Product";
 
-function Popular() {
+type AlertProps = {
+  setShowAlert: React.Dispatch<React.SetStateAction<boolean>>;
+}
+
+const Popular: React.FC<AlertProps> = ({setShowAlert}) => {
   
   const visibleItems =  popularProductsArr.slice(0, 4);
 
@@ -14,7 +18,7 @@ function Popular() {
       <div className={styles.productsWrap}>
         {
           visibleItems.map((item, index) => (
-            <Product key={index} item={item}/>
+            <Product setShowAlert={setShowAlert} key={index} item={item}/>
           ))
         }
       </div>

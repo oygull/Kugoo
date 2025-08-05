@@ -1,0 +1,156 @@
+.plans{
+  width: 97%;
+  margin: 0 auto;
+  background: radial-gradient(71.16% 199.4% at 82.43% 76.38%, #8185FF 0%, #6F73EE 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  margin-bottom: 50px;
+}
+
+.plansInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  color: #fff;
+  padding: 52px 0;
+}
+
+.innerWrap{
+  max-width: 650px;
+}
+
+.innerTitle{
+  font-size: 35px;
+  line-height: 44px;
+  margin-bottom: 21px;
+}
+
+.innerText{
+  font-size: 18px;
+  margin-bottom: 13px;
+}
+
+.innerWrapItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+  margin-bottom: 10px;
+}
+
+.innerBadge{
+  width: 82px;
+  padding: 5px 8px;
+  font-size: 14px;
+  color: #fff;
+  background-color: #75D14A;
+  margin-bottom: 17px;
+  border-radius: 5px;
+}
+
+.price{
+  width: 430px;
+  padding: 30px 20px;
+  border-radius: 10px;
+  border: 1.5px solid #FFFFFF33;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.priceTitle{
+  max-width: 250px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 28px;
+  text-transform: uppercase;
+  margin-bottom: 7px;
+  text-align: center;
+}
+
+.priceText{
+   max-width: 250px;
+   font-size: 14px;
+   line-height: 18px;
+   text-align: center;
+   margin-bottom: 28px;
+}
+
+.priceInput{
+  width: 100%;
+  background-color: #FFFFFF33;
+  border-radius: 5px;
+  padding: 15px 25px;
+  border: none;
+  outline: none;
+  margin-bottom: 20px;
+  font-size: 16px;
+}
+
+.priceInput::placeholder{
+  color: #fff;
+}
+
+.priceBtn{
+  cursor: pointer;
+  width: 100%;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  background-color: #fff;
+  color: #6F73EE;
+  border-radius: 5px;
+  border: none;
+  margin-bottom: 20px;
+}
+
+.priceLabel{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  column-gap: 12px;
+  align-items: center;
+}
+
+.priceLabel p{
+  font-size: 12px;
+  line-height: 16px;
+}
+
+.priceLabel p span{
+  text-decoration: underline;
+}
+
+
+
+.brandInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.brandContent{
+  max-width: 500px;
+}
+
+.brandTitle{
+  font-size: 35px;
+  line-height: 45px;
+  text-transform: uppercase;
+  margin-bottom: 20px;
+}
+
+.brandTitle p{
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.brandPar{
+  margin-bottom: 20px;
+}

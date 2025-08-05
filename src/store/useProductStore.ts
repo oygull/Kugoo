@@ -1,5 +1,9 @@
 import {create} from "zustand";
-import Product from "../components/Product";
+
+ type charProps = {
+  charName: string,
+  charOption: string
+}
 
 export type productProps = {
   productId: number,
@@ -7,12 +11,15 @@ export type productProps = {
   productPrice: number,
   productOldPrice: number,
   productBadge: string,
-  productImg: any,
   productSpeed: string,
   productDuration: string,
   productElectricalCharge: string,
   productKilovat: string,
   productType: string,
+  productVersionsArr?: string[],
+  productImgsArr?: string[],
+  productCategory?: string,
+  productChar?: charProps[]
 }
 
 type ProductStore = {
@@ -21,9 +28,10 @@ type ProductStore = {
   setProducts: (products : productProps[]) => void;
   addproductsToBasket: (product : productProps) => void;
   removeproductFromBasket: (id: number) => void;
+  getTotalPrice: () => number;
 }
 
-export const useProductStore = create<ProductStore>((set) => ({
+export const useProductStore = create<ProductStore>((set, get) => ({
   products: [],
   basketProducts: [],
   setProducts: (products) => set({products}),
@@ -32,5 +40,11 @@ export const useProductStore = create<ProductStore>((set) => ({
   })),
   removeproductFromBasket: (id) => set((state) => ({
     basketProducts: state.basketProducts.filter((product) => product.productId !== id),
-  }))
+  })),
+
+  getTotalPrice: () => {
+    return get().basketProducts.reduce(
+      (total, product) => total + product.productPrice , 0
+    );
+  }
 }))

@@ -1,4 +1,4 @@
-import React, { use } from "react";
+import React, { useState } from "react";
 import styles from "./product.module.scss";
 import productProps from "../../app/assets/types/types";
 import { useProductStore } from "../../store/useProductStore";
@@ -10,22 +10,33 @@ import timer from "../../app/assets/icons/timer.png";
 import basket from "../../app/assets/icons/basket.png"
 import heart from "../../app/assets/icons/heart.png";
 import { Link } from "react-router-dom";
+import { useParams } from "react-router-dom";
 
 type dataArrProps  = { 
   item : productProps;
+  setShowAlert: React.Dispatch<React.SetStateAction<boolean>>;
 }
 
-const Product: React.FC<dataArrProps> = ({item}) => {
+const Product: React.FC<dataArrProps> = ({item , setShowAlert}) => {
 
+  const handleAddToBasket = () => {
+    addProductToBasket(item);
+    setShowAlert(true);
+    console.log("Added")
+
+    setTimeout(() => {
+      setShowAlert(false);
+    }, 1000);
+  }
   const addProductToBasket = useProductStore((state) => state.addproductsToBasket);
-
+  
   return(
-    <Link to="/" className={styles.product} key={item.productId}>
+    <Link to={`/:${item.productCategory}/${item.productId}`} className={styles.product} key={item.productId}>
       <div className={styles.productImgBox}>
         <p style={{
           backgroundColor: item.productBadge === "Новинка" ? "#75D14A" : "#EE685F"
         }} className={styles.productBadge}>{item.productBadge}</p>
-        <img className={styles.productImg} src={item.productImg} alt="product"/>
+        <img className={styles.productImg} src={item.productImgsArr?.[0]} alt="product"/>
         <button className={styles.productBtn}>
           <img src={product} alt="product"/>
         </button>
@@ -67,9 +78,10 @@ const Product: React.FC<dataArrProps> = ({item}) => {
           </div>
         </div>
         <button 
-          onClick={() => addProductToBasket(item)}
+          onClick={handleAddToBasket}
         className={styles.buyBtn}>Купить в 1 клик</button>
       </div>
+      
     </Link>
   )
 }

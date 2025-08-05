@@ -1,0 +1,73 @@
+.catalog{
+  position: absolute;
+  top: 65px;
+  left: 220px;
+  width: 652px; 
+  box-shadow: 0px 10px 30px 0px #6F73EE1A;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  z-index: 10001;
+  padding: 10px 30px 10px 10px;
+  border-radius: 5px;
+}
+
+.catalogWrap {
+  width: 235px;
+  padding: 20px 24px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+  background-color: #F4F7FB;
+  border-radius: 5px;
+}
+
+.catalogWrapLink{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.catalogWrapLinkLink{
+  display: flex;
+  flex-direction: row;
+  column-gap: 10px;
+}
+
+.catalogWrapLinkLink p{
+  color: #6F73EE !important;
+}
+
+.catalogWrapLink p{
+  color: #282739;
+  font-size: 16px;
+}
+
+.linksWrap{
+padding: 20px 0;
+  display: flex;
+  flex-direction: column;
+  row-gap: 15px;
+}
+
+.linksWrap h4{
+  font-size: 16px;
+}
+
+.linksWrapInner{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.wrapInnerLink{
+  font-size: 14px;
+  color: #5D6C7B;
+  transition: 0.3s ease;
+}
+
+.wrapInnerLink:hover{
+  color: #6F73EE;
+  transition: 0.3s ease;
+}

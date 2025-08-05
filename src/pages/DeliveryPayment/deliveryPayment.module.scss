@@ -1,0 +1,349 @@
+.breadcrump{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.breadcrumpLink{
+  font-size: 12px;
+  color: #5d6a75;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumpLink img{
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+}
+
+.breadcrump p{
+  font-size: 12px;
+}
+
+.hero{
+  width: 97%;
+  margin: 0 auto;
+  height: 200px;
+  margin-bottom: 100px;
+  border-radius: 10px;
+  background-color: #6F73EE;
+}
+
+.heroTitle{
+  font-size: 35px;
+  line-height: 50px;
+  color: #fff;
+  max-width: 750px;
+}
+
+.heroInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 200px;
+  text-transform: uppercase;
+}
+
+.heroTitle{
+  font-size: 35px;
+  font-weight: 600;
+  max-width: 700px;
+}
+
+.dron{
+  width: 650px;
+  height: 100%;
+  position: relative;
+  position: relative;
+  right: -60px;
+}
+
+.deliveryTitle{
+  font-size: 35px;
+  font-weight: 600;
+  margin-bottom: 50px;
+}
+
+.deliverySubTitle{
+  font-size: 16px;
+  margin-bottom: 15px;
+}
+
+.deliveryWrap{
+  display: flex;
+  flex-direction: row;
+  column-gap: 20px;
+  margin-bottom: 50px;
+}
+
+.faqBtn{
+  font-size: 16px;
+  padding: 15px 25px;
+  background-color: #F4F7FB;
+  border-radius: 5px;
+  color: #5D6C7B;
+  border: none;
+  border: 1.3px solid transparent;
+}
+
+.activeFaqBtn{
+  font-size: 16px;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+  color: #6F73EE;
+  border: none;
+  border: 1.3px solid #6F73EE;
+}
+
+.deliveryItem{
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+}
+
+.deliveryItemContent{
+  display: grid;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  padding: 36px 0;
+  gap: 70px;
+  border-bottom: 1px solid #5d6c7b2f;
+}
+
+.delioverySubTitle{
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.deliveryParBox{
+  display: flex;
+  flex-direction: column;
+  row-gap: 23px;
+}
+
+.deliveryText{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.deliveryAdress{
+  padding: 39px 0;
+  width: 100%;
+  border-bottom: 1px solid #5d6c7b2f;
+}
+
+.deliveryAdressText{
+  font-size: 16px;
+  margin-bottom: 12px;
+}
+
+.numLink{
+  color: #6F73EE;
+}
+
+.deliveryAdressText{
+  font-size: 16px;
+  margin-bottom: 14px;
+}
+
+.deliveryAdressText span{
+  font-weight: 600;
+}
+
+.paymentSubTitle{
+  font-size: 18px;
+  margin-bottom: 33px;
+}
+
+.payment{
+  padding: 33px 0;
+}
+
+.paymentInner{
+  display: grid;
+  gap: 70px;
+  grid-template-columns: 1fr 1.5fr 1.5fr;
+  margin-bottom: 44px;
+}
+
+.paymentMethods{
+  display: flex;
+  flex-direction: column;
+  row-gap: 10px;
+}
+
+.paymentMethodsList{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 5px;
+}
+
+.paymentMrthodLink{
+  display: inline-block;
+  width: 34px;
+  height: 23px;
+}
+
+.paymentText{
+  font-size: 16px;
+  line-height: 24px;
+}
+
+.track{
+  width: 97%;
+  background: radial-gradient(64.2% 266.22% at 23.3% 72.57%, #FF9F73 0%, #DC7749 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  height: 518px;
+  margin-bottom: 50px;
+}
+
+.trackInner{
+  position: relative;
+}
+
+.trackContent{
+  max-width: 610px;
+  padding: 80px 0;
+  color: #fff;
+}
+
+.trackTitle{
+  font-size: 35px;
+  line-height: 50px;
+  text-transform: uppercase;
+  margin-bottom: 27px;
+  font-weight: 600;
+}
+
+.trackImg{
+  position: absolute;
+  top: 70px;
+  right: 40px;
+}
+
+.trackItemList{
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  margin-bottom: 38px;
+}
+
+.trackItem{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+.trackItem p{
+  font-size: 16px;
+  line-height: 20px;
+}
+
+.trackApp{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 10px;
+}
+
+
+
+.model{
+  width: 97%;
+  margin:  150px auto 0px auto;
+  background-color: #F4F7FB;
+}
+
+.modelInner{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.modelInnerContent{
+  max-width: 630px;
+}
+
+.modelInnerContent h3{
+  font-size: 35px;
+  line-height: 50px;
+  margin-bottom: 40px;
+  font-weight: 600;
+}
+
+.modelPar{
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+.modelImg{
+  width: 410px;
+  position: relative;
+  top: -60px;
+  transform: scale(1.2);
+}
+
+.formTop{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+  margin-bottom: 26px;
+}
+
+.modelInput{
+  width: 263px;
+  height: 53px;
+  background-color: #fff;
+  border-radius: 5px;
+  border: none;
+  outline: none;
+  padding: 15px 25px;
+  font-size: 16px;
+  color: #5D6C7B;
+  border: 1px solid #EAEBED;
+}
+
+.modelInput::placeholder{
+  color: #5D6C7B;
+}
+
+.modelBtn{
+  cursor: pointer;
+  width: 258px;
+  height: 53px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  color: #fff;
+  background-color: #6F73EE;
+  border: none;
+}
+
+.modelLabel{
+  width: 360px;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+  column-gap: 12px;
+}
+
+.modelLabel p{
+  font-size: 12px;
+  line-height: 14px;
+}
+
+.confidentialsLink{
+  text-decoration: underline;
+  color: #282739;
+}

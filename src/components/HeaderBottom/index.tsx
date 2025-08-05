@@ -7,9 +7,9 @@ function HeaderBottom (){
     <div className={styles.headerBottom}>
       <div className="container">
         <div className={styles.headerBottomWrap}>
-          <Link className={styles.headerBottomLink} to="/">О магазине</Link>
-          <Link className={styles.headerBottomLink} to="/">Доставка и оплата <span>Доступна рассрочка</span> </Link>
-          <Link className={styles.headerBottomLink} to="/">Тест-драйв</Link>
+          <Link className={styles.headerBottomLink} to="/about">О магазине</Link>
+          <Link className={styles.headerBottomLink} to="/paymentDelivery">Доставка и оплата <span>Доступна рассрочка</span> </Link>
+          <Link className={styles.headerBottomLink} to="/testDrive">Тест-драйв</Link>
           <Link className={styles.headerBottomLink} to="/">Блог</Link>
           <Link className={styles.headerBottomLink} to="/">Контакты</Link>
           <Link className={styles.headerBottomLink} to="/">Акции <span>%</span></Link>

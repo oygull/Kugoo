@@ -1,0 +1,140 @@
+.breadcrump{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.breadcrumpLink{
+  font-size: 12px;
+  color: #5d6a75;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumpLink img{
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+}
+
+.breadcrump p{
+  font-size: 12px;
+}
+
+.hero{
+  width: 97%;
+  margin: 0 auto;
+  background-image: url("../../app/assets/images/productHeroImg.png");
+  background-repeat: no-repeat;
+  margin-bottom: 30px;
+}
+
+.heroInner{
+  display: flex;
+  align-items: center;
+  height: 200px;
+}
+
+.heroTitle{
+  font-size: 35px;
+  font-weight: 600;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+
+.deliveryBottom{
+  width: 97%;
+  background: radial-gradient(76.7% 707.77% at 23.3% 72.57%, #595959 0%, #3B3E46 100%) /* warning: gradient uses a rotation that is not supported by CSS and may not behave as expected */;
+  border-radius: 10px;
+  margin: 0 auto;
+  margin-bottom: 30px;
+}
+
+.deliveryBottomInner{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.deliveryContent{
+  width: 440px;
+}
+
+.deliveryBadge{
+  width: 62px;
+  height: 27px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 5px;
+  background-color: #EE685F;
+  color: #fff;
+  font-size: 14px;
+  margin-bottom: 31px;
+}
+
+.deliveryTitle{
+  font-size: 35px;
+  line-height: 110%;
+  font-weight: 600;
+  margin-bottom: 37px;
+  color: #fff;
+}
+
+.moreInfoBtn{
+  display: inline-block;
+  font-size: 16px;
+  color: #282739;
+  padding: 15px 25px;
+  background-color: #fff;
+  border-radius: 5px;
+}
+
+.filter{
+  padding: 50px 0;
+}
+
+.filterTop{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.filterTitle{
+  text-transform: uppercase;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+.filterTopWrap{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 20px;
+}
+
+.filterTopPar{
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.filterMain{
+  display: flex;
+  flex-direction: row;
+  column-gap: 5cap;
+}
+
+.filteredProductsWrap{
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 30px;
+}

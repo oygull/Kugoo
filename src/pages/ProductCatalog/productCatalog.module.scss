@@ -1,0 +1,48 @@
+.breadcrump{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 6px;
+  margin-bottom: 20px;
+}
+
+.breadcrumpLink{
+  font-size: 12px;
+  color: #5d6a75;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+.breadcrumpLink img{
+  position: relative;
+  bottom: 1px;
+  margin-right: 4px;
+}
+
+.breadcrump p{
+  font-size: 12px;
+}
+
+.hero{
+  width: 97%;
+  margin: 0 auto;
+  border-radius: 10px;
+  background-image: url("../../app/assets/images/catalogHeroImg.png");
+  background-repeat: no-repeat;
+  height: 200px;
+}
+
+.heroTitle{
+  font-size: 35px;
+  color: white;
+  line-height: 50px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+.heroInner{
+  display: flex;
+  height: 200px;
+  align-items: center;
+}

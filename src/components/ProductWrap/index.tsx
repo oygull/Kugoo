@@ -1,18 +1,19 @@
 import React, { useState } from "react";
 import styles from "./productWrap.module.scss";
 import dataArr from "../../app/assets/data/dataArr";
-import productProps from "../../app/assets/types/types"
 import Product from "../Product";
 import { useProductStore } from "../../store/useProductStore";
 
 const productTypes = ['Хиты продаж', 'Для города', 'Для взрослых', 'Для детей'];
 
+type AlertProps = {
+  setShowAlert: React.Dispatch<React.SetStateAction<boolean>>;
+}
 
 
-function ProductWrap() {
+const ProductWrap: React.FC<AlertProps> = ({setShowAlert}) => {
 
   const products = useProductStore((state) => state.products);
-
   const [showAll, setShowAll] = useState(false);
 
   const visibleItems = showAll ? dataArr : products.slice(0,8);
@@ -35,7 +36,7 @@ function ProductWrap() {
         <div className={styles.productBox}>
            {
              visibleItems.map((item)=> (
-              <Product item={item} />
+              <Product setShowAlert={setShowAlert} item={item} />
              ))
            }  
         </div>

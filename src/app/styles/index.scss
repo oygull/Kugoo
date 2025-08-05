@@ -101,3 +101,33 @@ html{
     bottom: none;
   }
 }
+
+
+.addedAlert{
+  position: fixed;
+  top: 20px;
+  right: 30px;
+  width: 250px;
+  height: 36px;
+  font-size: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 100002;
+  background-color: #75D14A;
+  color: #fff;
+  border-radius: 5px;
+  opacity: 0;
+  animation:  fadeInOut 2s ease forwards;
+}
+
+@keyframes fadeInOut {
+  0% {opacity: 0;}
+  10% {opacity: 1;}
+  90% {opacity: 1;}
+  100% {opacity: 0;}
+}
+
+.thumbsSwiper .swiper-slide-thumb-active {
+  border: 1.3px solid #6F73EE;
+}

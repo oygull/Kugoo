@@ -87,7 +87,6 @@ function Prices () {
       </div>
         )
       }
-   
     </div>
   )
 };

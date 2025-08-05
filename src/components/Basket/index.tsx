@@ -1,12 +1,13 @@
-import React, { use } from "react";
+import React, { use, useEffect, useRef } from "react";
 import styles from "./basket.module.scss";
 import { useProductStore } from "../../store/useProductStore";
 import deleteicon from "../../app/assets/icons/delete.png";
 
 function Basket() {
-
+  
   const basketProducts = useProductStore((state) => state.basketProducts);
   const removeProductFromBasket = useProductStore((state) => state.removeproductFromBasket);
+  const totalprice = useProductStore(state => state.getTotalPrice())
 
   return(
     <div className={styles.basket}>
@@ -25,7 +26,7 @@ function Basket() {
              {
           basketProducts.map((item) => (
             <div className={styles.basketItem}>
-              <img className={styles.basketItemImg} alt="productImg" src={item.productImg}/>
+              <img className={styles.basketItemImg} alt="productImg" src={item.productImgsArr?.[0]}/>
               <div className={styles.basketContent}>
                 <h4>{item.productName}</h4>
                 <p>{(item.productPrice).toLocaleString("ru-RU").replace(/,/g,"")} ₽</p>
@@ -44,7 +45,7 @@ function Basket() {
       <div className={styles.basketFooter}>
         <div className={styles.priceBox}>
           <p className={styles.priceBoxText}>Сумма: </p>
-          <p className={styles.priceNum}>59 800 ₽</p>
+          <p className={styles.priceNum}>{(totalprice).toLocaleString("ru-RU").replace(/,/g,"")} ₽</p>
         </div>
         <button className={styles.basketBtn}>Оформить заказ</button>
       </div>

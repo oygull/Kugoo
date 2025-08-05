@@ -26,7 +26,7 @@ const visibleCategories = showAll ? categoriesArr : categoriesArr.slice(0,8)
         <div className={styles.categoriesItemWrap}>
             {
               visibleCategories.map((item) => (
-                <Link to="/" className={styles.category} key={item.catId}>
+                <Link to={`/${item.catId}`} className={styles.category} key={item.catId}>
                     <img className={styles.categoryItemImg} alt="categoryImg" src={item.catImg}/>
                     <div className={styles.categoryItemContent}>
                         <h4>{item.catName}</h4>

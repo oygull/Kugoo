@@ -1,0 +1,40 @@
+.selectContainer{
+  position: relative;
+  min-width: 120px;
+}
+
+.selectBox{
+  padding: 10px 20px;
+  border: 1.3px solid #6F73EE;
+  color: #6F73EE;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  column-gap: 8px;
+  border-radius: 5px;
+}
+
+.selectBox p{
+  font-size: 12px;
+  color: selectBox;
+}
+
+.optionsList{
+  width: 100%;
+  position: absolute;
+  top: 100%;
+  right: 0;
+  z-index: 100;
+  background-color: #F4F7FB;
+  border-radius: 5px;
+}
+
+.option{
+  padding: 10px 25px;
+  color: #282739;
+  font-size: 12px;
+}
+
+.option:hover{
+  color: #6F73EE;
+}

@@ -5,6 +5,7 @@
   align-items: center;
   justify-content: space-between;
   padding: 11px 0;
+  position: relative;
 }
 
 .headerNavList{
@@ -31,6 +32,9 @@
   flex-direction: row;
   align-items: center;
   column-gap: 9px;
+  background-color: transparent;
+  cursor: pointer;
+  border: none;
 }
 
 .phoneLink{
@@ -56,4 +60,39 @@
 
 .headerTop{
   border-bottom: 1px solid #ECF3FF;
+}
+
+.phoneNumbers{
+  position: absolute;
+  top: 44px;
+  right: 0;
+  width: 247px;
+  box-shadow: 0px 10px 30px 0px #6F73EE1A;
+  background-color: #fff;
+  z-index: 10003;
+  border-radius: 5px;
+}
+
+.phoneNumbersInner{
+  display: inline-block;
+  width: 100%;
+  padding: 15px 20px;
+  border-bottom: 1px solid #EAEBED;
+}
+
+.numDesc{
+  font-size: 12px;
+  margin-bottom: 4px;
+  color: #5D6C7B;
+}
+
+.phoneNum{
+  font-size: 16px;
+  color: #282739;
+}
+
+.workingHours {
+  font-size: 12px;
+  color: #282739;
+  margin-top: 4px;
 }
